@@ -1,0 +1,32 @@
+.App {
+  height: 100vh;
+}
+.App-header {
+  padding-top: 2rem;
+  text-align-last: center;
+}
+.form.onboarding-grid { 
+  max-width: 600px;
+  height: 80%;
+  max-height: 650px;
+  margin: 0 auto;
+  position: relative;
+}
+.form.onboarding-grid  .button-group { 
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .App {
+    height: auto;
+    min-height: 100vh;
+  }
+  .form.onboarding-grid { 
+    min-height: 650px;
+  }
+  .form.onboarding-grid  .button-group :last-child { 
+    margin-top: 10px;
+  }
+}
